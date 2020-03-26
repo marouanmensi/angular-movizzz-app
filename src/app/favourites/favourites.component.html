@@ -1,0 +1,22 @@
+<div *ngIf="!hasFavourites">
+  
+  <img class="logo2" src="././assets/add.png" alt="">  <p id="add">
+    No Favourite Movie(s) Added Yet !
+  </p>
+</div>
+
+<div *ngIf="hasFavourites" class="d-flex flex-row flex-wrap">
+  <div
+    class="col-12 col-sm-6 col-md-4 col-lg-3"
+    *ngFor="let movie of favourites"
+  >
+   
+
+    <app-movie-list-item [movie]="movie"></app-movie-list-item>
+    <button (click)="removeFromFavourites(movie)" class="btn btn-info btn-lg">
+        Remove from favourites
+      </button>
+  </div>
+</div>
+
+

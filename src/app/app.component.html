@@ -1,0 +1,91 @@
+<div class="container">
+
+    <nav class="
+    navbar navbar-dark py-2 bg-info navbar-expand-lg fixed-top">
+        <div class="container-fluid">
+    <a
+      class="navbar-brand"
+      [routerLink]="['']"
+      routerLinkActive="router-link-active"
+      >
+      <img class="logo" src="././assets/logo.png" alt="">
+      
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['movies/trending']"
+            routerLinkActive="active"
+            >Popular</a
+          >
+        
+        </li>
+        <!--
+       -->
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['movies/favourites']"
+            routerLinkActive="active"
+            >Favourit List</a
+          >
+        
+      </li>
+      <li class="nav-item">
+        <a
+          class="nav-link"
+          [routerLink]="['/']"
+        
+          >Upcoming Movies</a
+        ></li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/']"
+           
+            >News</a
+          ></li>
+      </ul>
+      <app-search></app-search>
+    </div>
+  </div>
+  </nav>
+
+
+   
+   
+
+
+<!--
+<div class="bgg">
+<div class="bg">
+    <img class="logo2" src="././assets/avangers2.png" alt="">  
+    <img class="net" src="././assets/net.png" alt="">
+    <img class="net2" src="././assets/net2.png" alt="">
+    <img class="net3" src="././assets/net3.png" alt="">
+    <img class="net4" src="././assets/net4.png" alt="">
+   
+</div>
+
+ 
+</div>
+ -->
+  <app-search-results></app-search-results>
+
+  <router-outlet></router-outlet>
+</div>

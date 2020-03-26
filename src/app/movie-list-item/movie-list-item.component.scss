@@ -1,0 +1,22 @@
+.card {
+    top: 30px;
+}
+
+.card-text{
+
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 400px;
+}
+.card-body{
+
+    background-color: rgba(203, 208, 209, 0.863);
+}
+.card-title{
+    color: rgb(18, 69, 82);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 190px;
+}

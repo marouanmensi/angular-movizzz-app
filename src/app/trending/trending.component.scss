@@ -1,0 +1,51 @@
+
+.container1{
+    margin-top: 120px;
+}
+.carousel__text--box {
+	background-color: rgba(163, 255, 250, 0.685);
+	left: 0;
+	bottom: 10;
+	height: 5em;
+	text-align: left;
+	padding: 1em;
+}
+
+.carousel__text--window {
+	margin-top: 15px;
+	right: 0;
+}
+
+.carousel-indicators {
+	margin: 0 0 0 75%;
+	height: 110%;
+	bottom: 0;
+	background: rgb(22, 151, 173);
+	display: block;
+}
+
+.carousel-indicators li {
+	background-color: transparent;
+	-webkit-border-radius: 0;
+	border-radius: 0;
+	display: block;
+	height: auto;
+	margin: 0 !important;
+	width: auto;
+}
+
+.carousel-indicators li img {
+	display: block;
+	opacity: 0.5;
+	width: 100%;
+	overflow: hidden;
+}
+
+.carousel-indicators li.active img {
+	opacity: 1;
+}
+
+.carousel-indicators li:hover img {
+	opacity: 0.75;
+}
+
