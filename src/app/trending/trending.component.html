@@ -1,6 +1,4 @@
 
-
-<!-- Simple 3 piece carousel with preview of images in sidebar using Bootstrap 4 -->
 <div class="container1">
   <div id="carouselImage" class="carousel slide" data-ride="carousel">
     <ol class="carousel-indicators">
@@ -39,7 +37,7 @@
 
 <div *ngIf="movies$ | async" class="d-flex flex-row flex-wrap">
   <div
-    class="col-12 col-sm-3 "
+    class="col-12 col-sm-4 "
     *ngFor="let movie of (movies$ | async)?.results"
   >
     <app-movie-list-item [movie]="movie"></app-movie-list-item>

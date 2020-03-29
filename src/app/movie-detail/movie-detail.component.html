@@ -1,31 +1,31 @@
 
 <div *ngIf="movie">
-  <div class="row justify-content-start">
-    <div class="card mb-0 col-12 ">
-      <h5 class="card-header text-center">{{ movie.title }}</h5>
+  <div >
+    <div >
+      <h5 >{{ movie.title }}</h5>
       <img
-        class="card-img-center"
+     
         [src]="getImageUri(movie)"
         alt="Card image cap"
       />
-      <div class="card-body">
-        <p class="card-textt">
+      <div >
+        <p >
           {{ movie.overview }}
         </p>
-        <ul class="list-group list-group-flush">
-          <li class="list-group-item text-center">
+        <ul >
+          <li >
             <span *ngFor="let genre of movie.genres">
               {{ genre.name }}&nbsp;&nbsp;
             </span>
           </li>
-          <li class="list-group-item">Released: {{ movie.release_date }}</li>
-          <li class="list-group-item">
+          <li >Released: {{ movie.release_date }}</li>
+          <li >
             Average vote: {{ movie.vote_average }}
           </li>
          
         </ul>
         <span>
-        <button type="button" class="btn btn-outline-dark mt-2 mb-2" (click)="goBack()">
+        <button type="button" class="btn btn-outline-light mt-2 mb-2" (click)="goBack()">
           Back
         </button>
         <button

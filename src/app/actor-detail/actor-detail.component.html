@@ -1,31 +1,31 @@
 
 
 <div *ngIf="actor">
-  <div class="row justify-content-center">
-    <div class="card mb-2 col-12 col-sm-10 col-md-8 col-lg-6">
-      <h5 class="card-header text-center">{{ actor.name }}</h5>
+  <div >
+    <div >
+      <h5 >{{ actor.name }}</h5>
       <img
-        class="card-img-top"
+      
         [src]="getActorProfileUri(actor)"
         alt="Card image cap"
       />
-      <div class="card-body">
-        <ul class="list-group list-group-flush">
-          <li *ngIf="actor.place_of_birth" class="list-group-item text-center">
+      <div >
+        <ul >
+          <li *ngIf="actor.place_of_birth" >
             Place of birth: {{ actor.place_of_birth }}
           </li>
-          <li *ngIf="actor.birthday" class="list-group-item text-center">
+          <li *ngIf="actor.birthday" >
             Birthday: {{ actor.birthday }}
           </li>
-          <li *ngIf="actor.deathday" class="list-group-item">
+          <li *ngIf="actor.deathday" >
             Died: {{ actor.deathday }}
           </li>
-          <li *ngIf="age" class="list-group-item text-center">
+          <li *ngIf="age">
             Age: {{ age }}
           </li>
         </ul>
 
-        <h5 class="text-center">Biography</h5>
+        <h5 >Biography</h5>
         <p class="card-text">
           {{ actor.biography }}
         </p>
@@ -34,7 +34,7 @@
   class="btn btn-secondary mt-2 mb-2 ml-2"
   (click)="goBack()"
 >
-  <- Back
+  < Back
 </button>
       </div>
     </div>
